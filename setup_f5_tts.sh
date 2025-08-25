@@ -24,25 +24,13 @@ echo "[INFO] Installing repo in editable mode..."
 pip install -e .
 
 # === 6. Prepare vi_voice folder ===
-echo "[INFO] Preparing vi_voice folder..."
-mkdir -p vi_voice
 cd vi_voice
-touch script.txt
 
 # === 7. Download model + config from Hugging Face ===
 echo "[INFO] Downloading model_last.pt..."
 huggingface-cli download hynt/F5-TTS-Vietnamese-ViVoice model_last.pt \
   --local-dir . \
   --local-dir-use-symlinks False
-
-echo "[INFO] Downloading config.json..."
-huggingface-cli download hynt/F5-TTS-Vietnamese-ViVoice config.json \
-  --local-dir . \
-  --local-dir-use-symlinks False
-
-# rename config.json -> vocab.txt
-mv config.json F5-TTS-Vietnamese/vocab.txt
-mv model_last.pt F5-TTS-Vietnamese/model_last.pt
 
 # === 8. Go back to repo root ===
 
