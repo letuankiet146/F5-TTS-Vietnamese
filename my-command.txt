@@ -1,0 +1,33 @@
+f5-tts_infer-cli --model "F5TTS_Base" --ref_audio ref2.wav --ref_text "Hồi Giáo nhấn mạnh rằng Ala không cần bất kì ai phải đổ máu để hi sinh để chuộc tội cho chính mình"  --gen_text "Được thành lập vào năm 1996 tại Quảng Châu bởi hứa gia ấn" --speed 0.8 --vocoder_name vocos --vocab_file vi_voice/vocab.txt --ckpt_file vi_voice/model_last.pt
+f5-tts_infer-cli --model "F5TTS_Base" --ref_audio ref2.wav --ref_text "Hồi Giáo nhấn mạnh rằng Ala không cần bất kì ai phải đổ máu để hi sinh để chuộc tội cho chính mình" --gen_file vi_voice/script.txt --speed 0.8 --vocoder_name vocos --vocab_file vi_voice/vocab.txt --ckpt_file vi_voice/model_last.pt
+
+f5-tts_infer-cli \
+--model "F5TTS_Base" \
+--ref_audio ref2.wav \
+--ref_text "Hồi Giáo nhấn mạnh rằng Ala không cần bất kì ai phải đổ máu để hi sinh để chuộc tội cho chính mình" \
+--gen_file vi_voice/script.txt \
+--speed 1 \
+--vocoder_name vocos \
+--vocab_file vi_voice/vocab.txt \
+--ckpt_file vi_voice/model_last.pt
+
+f5-tts_infer-cli \
+--model "F5TTS_Base" \
+--ref_audio ref3.wav \
+--ref_text "trong bầu không khí náo nhiệt của rạp hát, hung thủ rút khẩu súng derringer 44 li, dí sát vào đầu tổng thống và nả đạn" \
+--gen_file vi_voice/script.txt \
+--speed 1 \
+--vocoder_name vocos \
+--vocab_file vi_voice/vocab.txt \
+--ckpt_file vi_voice/model_last.pt
+
+
+f5-tts_infer-cli \
+--model "F5TTS_Base" \
+--ref_audio vanvo.wav \
+--ref_text "Thần ma đại chiến. Hành động đẹp mắt. Các nhân vật kinh điển gắn liền với tuổi thơ. Tất cả đều rất đáng mong chờ sau sự thành công của Na Tra ma đồng gián thế." \
+--gen_file vi_voice/script.txt \
+--speed 1 \
+--vocoder_name vocos \
+--vocab_file vi_voice/vocab.txt \
+--ckpt_file vi_voice/model_last.pt
