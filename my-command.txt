@@ -21,7 +21,6 @@ f5-tts_infer-cli \
 --vocab_file vi_voice/vocab.txt \
 --ckpt_file vi_voice/model_last.pt
 
-
 f5-tts_infer-cli \
 --model "F5TTS_Base" \
 --ref_audio vanvo.wav \
